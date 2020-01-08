@@ -1,0 +1,19 @@
+<div class="mainBox">
+    <form name="comandsForm">
+        <div class="titelLane">
+            <p>Bad words: </p>
+            <p class="badWords">{{badWordsList}}</p>
+        </div>
+        <div class="form-row">
+            <div class="col badWordsAreaStyle">
+                <input type="text" name="badWord" [(ngModel)]="badWord"  class="form-control mainInput" placeholder="text here" #badword="ngModel" required>
+            </div>
+            <input type="button" value="Add" class="btn btn-warning" (click)="pushBadWord()" [disabled]="!badword.valid"> 
+            <input type="button" value="Reset" class="btn btn-danger" (click)="clearForm()">
+        </div>
+        <br>
+        <input type="text" name="checkArea" [(ngModel)]="checkArea" class="form-control checkInput" placeholder="text here" #check='ngModel' required> <br>
+        <input type="button" value="Cenzor" class="mainButton  btn btn-success" (click)="cenzor()" [disabled]="!check.valid">
+    </form>
+</div>
+

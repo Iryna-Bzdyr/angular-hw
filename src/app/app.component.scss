@@ -1,0 +1,24 @@
+
+footer{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    height: 70px;
+    color: seashell;
+    box-shadow: 5px 5px 50px grey;
+    a{
+        text-decoration: none;
+        font-size: 24px;
+        color: seashell;
+        transition: zoom 10s;
+    }
+   
+    .nav{
+        padding: 0 100px;
+    }
+    .selected{
+        zoom: 120%;
+        color: rgb(9, 9, 80);
+        font-weight: bold;
+    }
+}

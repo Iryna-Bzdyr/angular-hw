@@ -1,3 +1,5 @@
+import { HOWEWORKS } from './pages';
+import { Homeworks } from './home-work-pages';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'homeworks';
+  homeworks = HOWEWORKS
+  selectedHomework:Homeworks
+  onSelect(homework: Homeworks): void {
+    this.selectedHomework = homework;
+  }
+
 }
